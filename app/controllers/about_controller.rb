@@ -22,4 +22,12 @@ class AboutController < ApplicationController
   def managers
     @managers = ["Wilbur Blixby", "Horatio Jebediah", "Antoine Fisher", "Julio Gallows"]
   end
+
+  def more_info
+  end
+
+  def thank_you
+    @full_name = params[:full_name]
+    @color = params[:color]
+  end
 end

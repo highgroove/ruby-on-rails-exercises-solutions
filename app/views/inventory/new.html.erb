@@ -1,0 +1,19 @@
+<h2>Create a New Widget</h2>
+
+<p>Add a Widget to a current inventory using this form.</p>
+
+<%= form_tag('/inventory/create') do %>
+  <p>Name:<br/>
+  <%= text_field :widget, :name %>
+  </p>
+  <p>Description:<br/>
+  <%= text_area :widget, :description %>
+  </p>
+  <p>Color:<br/>
+  <%= text_field :widget, :color %>
+  </p>
+  <p>Size:<br/>
+  <%= text_field :widget, :size %>
+  </p>
+  <p><%= submit_tag 'Create' %></p>
+<% end %>

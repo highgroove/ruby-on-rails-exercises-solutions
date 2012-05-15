@@ -1,4 +1,6 @@
 RubyOnRailsExercisesSolutions::Application.routes.draw do
+  get "inventory/new"
+
   get "about/company"
 
   # The priority is based upon order of creation:

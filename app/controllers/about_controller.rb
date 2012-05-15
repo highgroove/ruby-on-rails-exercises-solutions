@@ -14,4 +14,12 @@ class AboutController < ApplicationController
   def companie
     redirect_to :controller => 'about', :action => 'company'
   end
+
+  def supervisors
+    @supervisors = ["Bob Jones", "Jodi Bell", "Matt Todd", "Chris Kelly"]
+  end
+
+  def managers
+    @managers = ["Wilbur Blixby", "Horatio Jebediah", "Antoine Fisher", "Julio Gallows"]
+  end
 end
